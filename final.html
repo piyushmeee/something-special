@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Page</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #ffb3b3; /* light red */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        .box {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            max-width: 650px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: popIn 1s ease;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Cute button */
+        .cute-btn {
+            margin-top: 20px;
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #ff4d6d;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cute-btn:hover {
+            transform: scale(1.1);
+            background: #ff1f4a;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Pop animation */
+        @keyframes popIn {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: absolute;
+            color: rgba(255, 0, 80, 0.6);
+            font-size: 24px;
+            animation: floatUp 6s linear infinite;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 25%; animation-delay: 1s;">💖</div>
+    <div class="heart" style="left: 40%; animation-delay: 2s;">💗</div>
+    <div class="heart" style="left: 55%; animation-delay: 3s;">❤️</div>
+    <div class="heart" style="left: 70%; animation-delay: 4s;">💖</div>
+    <div class="heart" style="left: 85%; animation-delay: 5s;">💞</div>
+
+    <div class="container">
+        <div class="box">
+            <h1>❤️</h1>
+
+            <p>
+                So here I am. I don’t know if this is cringe or cute, but I really wanted to make something special for you, so I made this—of course, just for you, my love 💕 I hope this brings a smile to your face, because that’s all I ever want.
+            </p>
+
+            <p>
+                I know you and I, we both don’t really believe in Valentine’s Day, because why should love be shown on only one specific day? And honestly, this isn’t just because of Valentine’s anyway. This is because of you.
+            </p>
+
+            <p>
+                I love you every single day. Not just today, not just on special dates, but always. And I just wanted you to know that. ❤️
+            </p>
+
+            <a href="secret.html">
+                <button class="cute-btn">One last thing… 💖</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
